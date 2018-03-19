@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "amd",
+        "outDir": "scripts/",
+        "noImplicitAny": false,
+        "sourceMap": true,
+        "lib": [
+            "es2016",
+            "dom",
+            "es5"
+        ]
+    },
+    "exclude": [
+        "node_modules",
+        "**/node_modules/*"
+    ]
+}
