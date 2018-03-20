@@ -1,6 +1,24 @@
-define(["require", "exports", "./src/index"], function (require, exports, index_1) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    index_1.SampleTs.hello();
-});
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+function Component(target) {
+    console.log("<br/>Decorator");
+}
+var SampleTs = /** @class */ (function () {
+    function SampleTs() {
+        console.log("constructor");
+    }
+    SampleTs.prototype.hello = function () {
+        console.log("<br/>test");
+    };
+    SampleTs = __decorate([
+        Component
+    ], SampleTs);
+    return SampleTs;
+}());
+var x = new SampleTs();
+x.hello();
 //# sourceMappingURL=index.js.map

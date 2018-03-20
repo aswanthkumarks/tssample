@@ -1,11 +1,12 @@
-define(["require", "exports"], function (require, exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    class SampleTs {
-        static hello() {
-            console.log("Hello Sample");
-        }
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var SampleTs = /** @class */ (function () {
+    function SampleTs() {
     }
-    exports.SampleTs = SampleTs;
-});
+    SampleTs.hello = function () {
+        console.log("Hello Sample");
+    };
+    return SampleTs;
+}());
+exports.SampleTs = SampleTs;
 //# sourceMappingURL=index.js.map

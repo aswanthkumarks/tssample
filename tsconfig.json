@@ -1,15 +1,10 @@
 {
     "compilerOptions": {
-        "target": "es6",
-        "module": "amd",
+        "target": "es5",
         "outDir": "scripts/",
-        "noImplicitAny": false,
         "sourceMap": true,
-        "lib": [
-            "es2016",
-            "dom",
-            "es5"
-        ]
+        "experimentalDecorators": true
+        
     },
     "exclude": [
         "node_modules",
